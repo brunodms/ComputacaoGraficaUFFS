@@ -30,6 +30,13 @@ const spherew = new THREE.Mesh(geometryw, materialw);
 spherew.position.x = 0;
 scene.add(spherew);
 
+// Cubo
+const geometryc = new THREE.BoxGeometry(1, 1, 1);
+const materialc = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cubo = new THREE.Mesh(geometryc, materialc);
+cubo.position.x = 3;
+scene.add(cubo);
+
 camera.position.z = 5;
 
 function animate() {
